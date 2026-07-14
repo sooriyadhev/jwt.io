@@ -29,9 +29,9 @@
   --border-subtle: rgba(255, 255, 255, 0.08);
 
   /* Glass (navbar) */
-  --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-bg-strong: rgba(255, 255, 255, 0.06);
-  --glass-hover: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(255, 255, 255, .82);
+  --glass-bg-strong: rgba(255, 255, 255, .90);
+  
 
   /* Text */
   --text-primary: #ffffff;

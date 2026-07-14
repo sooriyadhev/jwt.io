@@ -113,43 +113,101 @@
 
 /* ---------------- RESPONSIVE ---------------- */
 
-@media (max-width: 1000px) {
-    .workspace {
-        grid-template-columns: 1fr;
-        gap: 22px;
-    }
+/* ---------------- RESPONSIVE ---------------- */
 
-    .left-panel {
-        grid-column: 1;
-    }
+@media (max-width:1000px){
 
-    .right-panel {
-        grid-column: 1;
-        grid-template-rows: auto;
-        grid-auto-rows: auto;
-        gap: 16px;
-    }
+.workspace{
 
-    .encoder-left {
-        grid-column: 1;
-        grid-row: auto;
-    }
+    display:flex;
+    flex-direction:column;
 
-    .encoder-right {
-        grid-column: 1;
-        grid-row: auto;
-    }
+    gap:20px;
+
 }
 
-@media (max-width: 520px) {
-    .workspace {
-        margin-top: 22px;
-        gap: 18px;
-    }
+.workspace.decoder-mode,
+.workspace.encoder-mode{
 
-    .workspace-links {
-        margin-bottom: 28px;
-        flex-wrap: wrap;
-        text-align: center;
-    }
+    display:flex;
+    flex-direction:column;
+
+}
+
+.left-panel,
+.right-panel,
+.encoder-left,
+.encoder-right{
+
+    width:100%;
+
+}
+
+.right-panel{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.encoder-left,
+.encoder-right{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.right-panel .json-viewer,
+.right-panel .signature-panel,
+.encoder-left .json-viewer,
+.encoder-left .signature-panel,
+.encoder-right .json-viewer{
+
+    width:100%;
+    min-width:0;
+
+    flex:none;
+
+}
+
+}
+
+@media (max-width:520px){
+
+.workspace{
+
+    margin-top:20px;
+
+    gap:16px;
+
+}
+
+.left-panel,
+.right-panel,
+.encoder-left,
+.encoder-right{
+
+    width:100%;
+
+}
+
+.workspace-links{
+
+    margin-top:18px;
+
+    margin-bottom:26px;
+
+    flex-wrap:wrap;
+
+    text-align:center;
+
+    gap:8px;
+
+}
+
 }
