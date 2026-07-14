@@ -1,0 +1,431 @@
+.resources {
+    width: min(1240px, calc(100% - 64px));
+
+    margin: 80px auto;
+
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* ================= HANDBOOK ================= */
+
+.handbook-card {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 230px;
+
+    padding: 42px 72px;
+
+    background: var(--bg-surface-alt);
+    border: 1px solid var(--border-color-soft);
+    border-radius: 22px;
+
+    overflow: visible;
+}
+
+/* Grid Background */
+
+.handbook-card::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+
+    background-size: 28px 28px;
+
+    opacity: .55;
+
+    pointer-events: none;
+
+    border-radius: inherit;
+}
+
+/* Purple Glow */
+
+.handbook-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    background: var(--accent-purple-glow);
+
+    border-radius: 50%;
+
+    filter: blur(80px);
+
+    opacity: .18;
+
+    z-index: -1;
+}
+
+/* Book */
+
+.handbook-image {
+    position: absolute;
+
+    left: 25px;
+    top: -38px;
+
+    width: 240px;
+
+    z-index: 5;
+
+    transform: rotate(-12deg);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.handbook-image img {
+    width: 100%;
+    display: block;
+}
+
+.handbook-card:hover .handbook-image {
+    transform: rotate(10deg);
+}
+
+/* Floating JSON */
+
+.json-card {
+    position: absolute;
+
+    left: 180px;
+    top: 42px;
+
+    width: 250px;
+
+    background: var(--bg-surface);
+
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+
+    padding: 20px;
+
+    z-index: 2;
+
+}
+
+.json-card pre {
+    margin: 0;
+
+    font-family: monospace;
+
+    color: var(--text-primary);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+/* Content */
+
+.handbook-content {
+    position: relative;
+    z-index: 5;
+    align-items: flex-start;
+    padding-top: 18px;
+
+    margin-left: 390px;
+
+    max-width: 560px;
+}
+
+.handbook-content h2 {
+    margin: 0 0 14px;
+
+    color: var(--text-primary);
+
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.08;
+
+    letter-spacing: -1.5px;
+}
+
+.handbook-content p {
+    margin: 0 0 28px;
+
+    color: var(--text-secondary);
+
+    font-size: 1.08rem;
+    line-height: 1.65;
+
+    max-width: 520px;
+}
+
+/* Buttons */
+
+.resource-btn{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    background:var(--bg-surface);
+
+    color:var(--text-primary);
+
+    border:1px solid var(--border-color);
+
+    border-radius:8px;
+
+    padding:10px 18px;
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s ease;
+}
+
+.resource-btn:hover{
+
+    border-color:var(--text-muted);
+
+    background:var(--glass-hover);
+
+}
+
+/* JWT Handbook button (Download Ebook) - special styling - stays white */
+.handbook-content .resource-btn {
+    background: var(--btn-invert-bg);
+    color: var(--btn-invert-text);
+    border: none;
+}
+
+.handbook-content .resource-btn:hover {
+    background: var(--btn-invert-bg-hover);
+    border: none;
+}
+
+/* ================= BOTTOM GRID ================= */
+
+.resource-grid{
+    display:grid;
+    grid-template-columns:380px 1fr;
+    gap:32px;
+    align-items:stretch;
+}
+
+.resource-item {
+    background: var(--bg-input);
+
+    border: 1px solid var(--border-color-soft);
+
+    border-radius: 22px;
+
+    padding: 36px;
+}
+
+.resource-item h2 {
+    color: var(--text-primary);
+
+    font-size: 2rem;
+
+    margin-bottom: 18px;
+}
+
+.resource-item p {
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+}
+
+/* ================= RIGHT CARD ================= */
+
+.resource-large {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+    background: var(--bg-surface-deep);
+    border: 1px solid var(--border-color);
+    border-radius: 22px;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    min-height: 330px;
+}
+
+.resource-text {
+    width: 50%;
+
+    padding: 52px 42px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resource-text h2 {
+    color: var(--text-primary);
+
+    font-size: 2.7rem;
+    line-height: 1.08;
+
+    margin-bottom: 18px;
+}
+
+.resource-text p {
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+    max-width: 400px;
+}
+
+.resource-image {
+    position: relative;
+
+    width: 54%;
+
+    overflow: hidden;
+
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+
+    /* jwt.io curve */
+    border-bottom-left-radius: 220px;
+
+    display: flex;
+}
+
+.resource-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+
+    .handbook-card {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 50px 30px;
+    }
+
+    .handbook-image {
+        position: relative;
+
+        top: -30px;
+        left: 0;
+
+        margin-bottom: 20px;
+    }
+
+    .json-card {
+        display: none;
+    }
+
+    .handbook-content {
+        margin-left: 0;
+    }
+
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resource-large {
+        flex-direction: column;
+    }
+
+    .resource-text {
+        width: 100%;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .resource-image {
+        width: 100%;
+        height: 260px;
+
+        border-radius: 0 0 22px 22px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .resources {
+        margin: 60px auto;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .resources {
+        padding: 0 16px;
+        gap: 20px;
+        margin: 50px auto;
+    }
+
+    .handbook-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .handbook-content p {
+        font-size: 1rem;
+    }
+
+    .resource-item {
+        padding: 26px;
+    }
+
+    .resource-item h2 {
+        font-size: 1.6rem;
+    }
+
+    .resource-text {
+        padding: 30px 24px;
+    }
+
+    .resource-text h2 {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .handbook-image {
+        width: 170px;
+    }
+
+    .handbook-content h2 {
+        font-size: 1.7rem;
+        letter-spacing: -0.5px;
+    }
+
+    .resource-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,275 @@
+.json-viewer {
+
+    background: var(--bg-surface);
+
+    border-radius: 16px;
+
+    padding: 20px;
+
+    border: 1px solid var(--border-subtle);
+
+    transition: background-color .2s ease, border-color .2s ease;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.json-viewer h3 {
+
+    font-size: 15px;
+
+    margin-bottom: 16px;
+
+    color: var(--text-primary);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+
+}
+
+.viewer-toolbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 14px;
+
+    flex-wrap: wrap;
+
+}
+
+.viewer-tabs {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+.tab {
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--text-muted);
+
+    cursor: pointer;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    transition: background-color .2s ease, color .2s ease;
+
+}
+
+.active-tab {
+
+    background: var(--bg-chip-active);
+
+    color: var(--text-primary);
+
+}
+
+.viewer-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+.icon-btn {
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--text-secondary);
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: color .2s ease;
+
+}
+
+.icon-btn:hover {
+
+    color: var(--text-primary);
+
+}
+
+.viewer-content {
+
+    background: var(--bg-input);
+
+    border-radius: 12px;
+
+    padding: 16px;
+
+    min-height: 160px;
+
+    flex: 1;
+    overflow-y: hidden;
+    min-height: 0;
+}
+
+.viewer-content pre {
+
+    color: var(--text-primary);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+    white-space: pre-wrap;
+
+    word-break: break-word;
+    margin: 0;
+
+}
+
+/* ---------------- JSON SYNTAX HIGHLIGHT ---------------- */
+
+.json-tok-key {
+    color: var(--json-key);
+}
+
+.json-tok-string {
+    color: var(--json-string);
+}
+
+.json-tok-number {
+    color: var(--json-number);
+}
+
+.json-tok-boolean {
+    color: var(--json-boolean);
+}
+
+.json-tok-null {
+    color: var(--json-null);
+}
+
+/* ---------------- ENCODED JWT HIGHLIGHT ---------------- */
+
+.jwt-encoded {
+    word-break: break-all;
+}
+
+.jwt-tok-header {
+    color: var(--jwt-header);
+}
+
+.jwt-tok-payload {
+    color: var(--jwt-payload);
+}
+
+.jwt-tok-signature {
+    color: var(--jwt-signature);
+}
+
+.jwt-tok-dot {
+    color: var(--jwt-dot);
+    font-weight: 700;
+}
+
+/* ---------------- EDITABLE JSON (highlight overlay) ---------------- */
+
+.json-editor-wrap {
+    position: relative;
+    width: 100%;
+    min-height: 120px;
+    flex: 1;
+}
+
+.json-editor-highlight,
+.json-editor {
+    margin: 0;
+    width: 100%;
+    min-height: 120px;
+
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+
+    white-space: pre-wrap;
+    word-break: break-word;
+    padding: 0;
+}
+
+.json-editor-highlight {
+    position: absolute;
+    inset: 0;
+
+    color: var(--text-primary);
+
+    pointer-events: none;
+
+    overflow: hidden;
+}
+
+.json-editor {
+    position: relative;
+    z-index: 1;
+
+    background: transparent;
+    color: transparent;
+    caret-color: var(--text-primary);
+
+    border: none;
+    outline: none;
+    resize: none;
+
+    overflow: hidden;
+}
+
+.json-editor::selection {
+    background: var(--glass-hover);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 700px) {
+    .json-viewer {
+        padding: 16px;
+    }
+
+    .json-viewer h3 {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+
+    .viewer-content {
+        padding: 14px;
+        min-height: 140px;
+    }
+
+    .viewer-content pre,
+    .json-editor-highlight,
+    .json-editor {
+        font-size: 13px;
+    }
+}

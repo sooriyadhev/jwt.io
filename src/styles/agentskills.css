@@ -1,0 +1,185 @@
+.agent-skills {
+
+    max-width: 1240px;
+
+    margin: 80px auto 60px;
+
+    padding: 40px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--bg-surface);
+
+    border: 1px solid var(--border-color-soft);
+
+    border-radius: 22px;
+
+    gap: 60px;
+}
+
+/* LEFT */
+
+.agent-left {
+    flex: 1;
+    min-width: 240px;
+}
+
+.agent-left h2 {
+
+    color: var(--text-primary);
+
+    font-size: 2.4rem;
+
+    margin-bottom: 24px;
+}
+
+.agent-left p {
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+    max-width: 470px;
+
+    margin-bottom: 30px;
+}
+
+.skill-btn {
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    background: var(--btn-invert-bg);
+
+    color: var(--btn-invert-text);
+
+    border: none;
+
+    border-radius: 999px;
+
+    padding: 12px 22px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color .25s ease;
+}
+
+.skill-btn:hover {
+
+    background: var(--btn-invert-bg-hover);
+}
+
+/* TERMINAL */
+
+.terminal-card {
+
+    width: 520px;
+    max-width: 100%;
+
+    background: var(--bg-surface-alt);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+.terminal-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 20px;
+
+    background: var(--bg-toolbar);
+
+    color: var(--text-primary);
+
+    font-weight: 600;
+}
+
+.terminal-body {
+
+    padding: 22px;
+}
+
+.terminal-body p {
+
+    color: var(--text-muted);
+
+    margin-bottom: 8px;
+
+    font-size: .9rem;
+}
+
+.terminal-body pre {
+
+    color: var(--text-primary);
+
+    background: var(--bg-input);
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    overflow: auto;
+
+    font-size: .85rem;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 1100px) {
+
+    .agent-skills {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+
+        gap: 36px;
+
+        margin: 80px auto 60px;
+
+        padding: 40px 36px;
+    }
+
+    .agent-left p {
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .terminal-card {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .agent-skills {
+        padding: 30px 22px;
+        margin: 60px auto 50px;
+        border-radius: 18px;
+    }
+
+    .agent-left h2 {
+        font-size: 1.7rem;
+        margin-bottom: 16px;
+    }
+
+    .skill-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+}

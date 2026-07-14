@@ -1,0 +1,155 @@
+.workspace {
+    display: grid;
+    gap: 24px;
+    margin-top: 0px;
+    align-items: stretch;
+    min-height: 0;
+}
+
+.workspace.decoder-mode{
+    grid-template-columns:58% 42%;
+}
+
+.workspace.encoder-mode{
+    grid-template-columns:42% 58%;
+}
+
+.left-panel,
+.right-panel {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.left-panel {
+    grid-column: 1;
+}
+
+.right-panel {
+    grid-column: 2;
+    gap: 16px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    align-items: stretch;
+}
+
+/* Decoder mode: right panel layout */
+.right-panel .json-viewer {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+/* Decoder mode: ensure all three panels equal height */
+.right-panel .json-viewer:first-of-type,
+.right-panel .json-viewer:nth-of-type(2),
+.right-panel .signature-panel {
+    min-height: 0;
+}
+
+/* ---------- Encoder ---------- */
+
+.encoder-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    grid-column: 1;
+    grid-row: 1 / span 3;
+}
+
+.encoder-left .json-viewer,
+.encoder-left .signature-panel {
+    margin: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.encoder-right {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.encoder-right .json-viewer {
+    margin: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.workspace-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 14px;
+    margin-bottom: 40px;
+
+    font-size: .82rem;
+}
+
+.workspace-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+
+    transition: color .2s ease;
+}
+
+.workspace-links a:hover {
+    color: var(--text-primary);
+}
+
+.workspace-links span {
+    color: var(--text-faint);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 1000px) {
+    .workspace {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .left-panel {
+        grid-column: 1;
+    }
+
+    .right-panel {
+        grid-column: 1;
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        gap: 16px;
+    }
+
+    .encoder-left {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .encoder-right {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .workspace {
+        margin-top: 22px;
+        gap: 18px;
+    }
+
+    .workspace-links {
+        margin-bottom: 28px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}

@@ -1,0 +1,54 @@
+.mode-tabs {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 40px;
+
+    display: flex;
+    align-items: center;
+
+    background: var(--bg-tabs);
+    border: 1px solid var(--border-color-soft);
+    border-radius: 999px;
+
+    padding: 6px;
+}
+
+.mode-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+
+    color: var(--text-muted);
+
+    padding: 12px 28px;
+
+    border-radius: 999px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color .2s ease, color .2s ease;
+    white-space: nowrap;
+}
+
+.mode-btn.active {
+    background: var(--bg-tab-active);
+    color: var(--text-primary);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 520px) {
+    .mode-tabs {
+        width: 100%;
+        margin-bottom: 28px;
+    }
+
+    .mode-btn {
+        flex: 1;
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+}
