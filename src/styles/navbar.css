@@ -13,10 +13,10 @@
 
     margin:16px auto;
 
-    background:var(--glass-bg);
-
-    backdrop-filter:blur(24px) saturate(180%);
-    -webkit-backdrop-filter:blur(30px) saturate(180%);
+    background:var(--navbar-bg);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    
 
     border:1px solid var(--border-subtle);
 

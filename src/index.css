@@ -29,9 +29,7 @@
   --border-subtle: rgba(255, 255, 255, 0.08);
 
   /* Glass (navbar) */
-  --glass-bg: rgba(255, 255, 255, .82);
-  --glass-bg-strong: rgba(255, 255, 255, .90);
-  
+  --navbar-bg: rgba(24, 24, 24, 0.72);
 
   /* Text */
   --text-primary: #ffffff;
@@ -93,9 +91,7 @@
   --border-subtle: rgba(0, 0, 0, 0.08);
 
   /* Glass (navbar) */
-  --glass-bg: rgba(0, 0, 0, 0.035);
-  --glass-bg-strong: rgba(0, 0, 0, 0.05);
-  --glass-hover: rgba(0, 0, 0, 0.06);
+  --navbar-bg: rgba(255, 255, 255, 0.72);
 
   /* Text */
   --text-primary: #15161a;
