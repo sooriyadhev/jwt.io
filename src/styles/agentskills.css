@@ -19,22 +19,15 @@
 }
 
 .agent-left h2 {
-
     color: var(--text-primary);
-
     font-size: 2.4rem;
-
     margin-bottom: 24px;
 }
 
 .agent-left p {
-
     color: var(--text-secondary);
-
     line-height: 1.8;
-
     max-width: 470px;
-
     margin-bottom: 30px;
 }
 
@@ -88,13 +81,13 @@
 }
 
 .terminal-body {
-    padding: 22px;
+    padding:22px;
     background:var(--bg-page);
 }
 
 .terminal-body p {
     color: var(--text-muted);
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     font-size: .9rem;
 }
 
@@ -102,7 +95,7 @@
     color: var(--text-primary);
     padding: 10px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     overflow: auto;
     font-size: .85rem;
 }
