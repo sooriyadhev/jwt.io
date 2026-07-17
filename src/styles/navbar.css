@@ -4,7 +4,7 @@
 
 .header-shell{
     position:sticky;
-    top:16px;
+    top:12px;
     z-index:1000;
     width:min(1240px,calc(100% - 32px));
     margin:16px auto;
@@ -24,20 +24,16 @@
     justify-content:center;
     align-items:center;
     gap:8px;
-    padding:10px 18px;
-    font-size:14px;
+    padding:5px 15px;
+    font-size:12px;
     font-weight:500;
     color:var(--text-secondary);
 }
 
 .announcement-bar a{
     color:var(--text-primary);
-    font-weight:600;
-}
-
-.announcement-bar a:hover{
-
-    text-decoration:underline;
+    font-weight:400;
+    text-decoration: underline;
 }
 
 /* =======================================================
@@ -45,13 +41,12 @@
 ======================================================= */
 
 .navbar{
-
     display:flex;
     justify-content:space-between;
     align-items:center;
     width:100%;
     margin:0;
-    padding:10px 20px;
+    padding:5px 15px;
     background:transparent;
     border:none;
 }
@@ -61,42 +56,30 @@
 ======================================================= */
 
 .brand{
-
     display:flex;
     align-items:center;
-
     gap:10px;
-
     flex-shrink:0;
 }
 
 .jwt-symbol{
-
     width:30px;
     height:30px;
-
     flex-shrink:0;
-
     animation:jwtSpin 5s linear infinite;
 }
 
 .jwt-wordmark{
-
     width:52px;
     height:auto;
-
     display:block;
 }
 
 .brand-text{
-
     color:var(--text-primary);
-
     font-size:14px;
     font-weight:500;
-
     letter-spacing:-0.2px;
-
     white-space:nowrap;
 }
 
