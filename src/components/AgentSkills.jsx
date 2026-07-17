@@ -1,7 +1,7 @@
 import "../styles/agentskills.css";
 
 import { LuCopy } from "react-icons/lu";
-import { FiArrowRight } from "react-icons/fi";
+import { FiChevronRight } from "react-icons/fi";
 
 function AgentSkills() {
   return (
@@ -18,7 +18,7 @@ function AgentSkills() {
 
         <button className="skill-btn">
           See the skills
-          <FiArrowRight />
+          <FiChevronRight />
         </button>
 
       </div>

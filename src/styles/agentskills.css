@@ -47,31 +47,31 @@
 }
 
 .skill-btn {
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:var(--bg-surface);
+    color:var(--text-primary);
+    border:1px solid var(--border-color);
+    border-radius:999px;
+    padding:8px 16px;
+    font-size:14px;
+    font-weight:400;
+    cursor:pointer;
+    transition:.25s ease;
+    width: fit-content;
+    align-self: flex-start;
+}
 
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-
-    background: var(--btn-invert-bg);
-
-    color: var(--btn-invert-text);
-
-    border: none;
-
-    border-radius: 999px;
-
-    padding: 12px 22px;
-
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition: background-color .25s ease;
+.skill-btn svg{
+    width:15px;
+    height:15px;
+    position:relative;
 }
 
 .skill-btn:hover {
-
-    background: var(--btn-invert-bg-hover);
+    border-color:rgba(255,255,255,0.3);
+    background:var(--glass-hover);
 }
 
 /* TERMINAL */

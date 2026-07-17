@@ -5,7 +5,22 @@
    Default (no attribute / [data-theme="dark"]) = Dark theme
    [data-theme="light"] overrides everything below.
    ========================================================= */
-
+@font-face {
+    font-family: "Aeonik";
+    src: url("/fonts/Aeonik-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Aeonik", Inter, sans-serif;
+    font-weight: 500;
+}
 :root,
 :root[data-theme="dark"] {
   color-scheme: dark;

@@ -2,7 +2,8 @@ import "../styles/resources.css";
 
 import ebook from "../assets/ebook.svg";
 import end from "../assets/en.diagram.jpg";
-import {FiArrowRight} from "react-icons/fi";
+import {FiArrowRight,FiChevronRight} from "react-icons/fi";
+
 
 function Resources() {
     return (
@@ -53,7 +54,7 @@ function Resources() {
                     </p>
 
                     <button className="resource-btn">
-                        See all libraries <FiArrowRight />
+                        See all libraries <FiChevronRight />
                     </button>
 
                 </div>
@@ -72,7 +73,7 @@ function Resources() {
         </p>
 
         <button className="resource-btn">
-            Create a free account →
+            Create a free account <FiChevronRight />
         </button>
 
     </div>

@@ -1,13 +1,10 @@
 .resources {
     width: min(1240px, calc(100% - 64px));
-
     margin: 80px auto;
-
     padding: 0;
-
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 60px;
 }
 
 /* ================= HANDBOOK ================= */
@@ -90,7 +87,7 @@
 }
 
 .handbook-card:hover .handbook-image {
-    transform: rotate(-4deg) scale(1.06);
+    transform: rotate(0deg) scale(1.06);
 }
 
 /* Floating JSON */
@@ -141,14 +138,10 @@
 
 .handbook-content h2 {
     margin: 0 0 14px;
-
     color: var(--text-primary);
-
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.08;
-
-    letter-spacing: -1.5px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1;
 }
 
 .handbook-content p {
@@ -174,6 +167,16 @@
     font-weight:400;
     cursor:pointer;
     transition:.25s ease;
+    width: fit-content;
+    align-self: flex-start;
+
+}
+
+.resource-btn svg{
+    width:15px;
+    height:15px;
+    position:relative;
+    top:1.5px;
 }
 
 .resource-btn:hover{
@@ -211,9 +214,9 @@
 
 .resource-item h2 {
     color: var(--text-primary);
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight:500px;
-    line-height:1.15;
+    line-height:1.5;
     margin-bottom: 16px;
 }
 
@@ -241,7 +244,7 @@
 
 .resource-text {
     width: 48%;
-    padding: 40px 34px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -249,8 +252,8 @@
 
 .resource-text h2 {
     color: var(--text-primary);
-    font-size: 2.2rem;
-    line-height: 1.08;
+    font-size: 2.1rem;
+    line-height: 1.5;
     margin-bottom: 18px;
     font-weight: 500px;
 }
