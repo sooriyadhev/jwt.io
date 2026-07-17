@@ -54,7 +54,7 @@ em {
   --border-subtle: rgba(255, 255, 255, 0.08);
 
   /* Glass (navbar) */
-  --navbar-bg: rgba(24, 24, 24, 0.72);
+  --navbar-bg: rgba(24, 24, 24, 0.36);
 
   /* Text */
   --text-primary: #ffffff;
@@ -116,7 +116,7 @@ em {
   --border-subtle: rgba(0, 0, 0, 0.08);
 
   /* Glass (navbar) */
-  --navbar-bg: rgba(255, 255, 255, 0.72);
+  --navbar-bg: rgba(255, 255, 255, 0.36);
 
   /* Text */
   --text-primary: #15161a;

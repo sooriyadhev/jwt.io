@@ -1,7 +1,6 @@
 /* =======================================================
    HEADER SHELL
 ======================================================= */
-
 .header-shell{
     position:sticky;
     top:12px;
@@ -123,17 +122,22 @@
     cursor:pointer;
     font-size:14px;
     font-weight:500;
-    transition:.25s ease;
+    transition:  .22s ease,color .22s ease;
 }
 
 .nav-links li:hover{
     color:var(--text-primary);
-    background:var(--glass-hover);
+    background:rgba(255,255,255,.26);
 }
 
 .nav-links li.active{
     color:var(--text-primary);
-    background:var(--glass-bg-strong);
+    background:rgba(255,255,255,.09);
+    font-weight: 500;
+}
+
+.nav-links li.active:hover{
+    background:rgba(255,255,255,.12);
 }
 
 /* =======================================================
@@ -146,15 +150,15 @@
     gap:4px;
     padding:4px;
     border-radius:999px;
-    background:var(--glass-bg-strong);
+    background:var(--bg-surface);
     flex-shrink:0;
 }
 
 .theme-btn{
-    width:34px;
-    height:34px;
+    width:54px;
+    height:44px;
     border:none;
-    border-radius:50%;
+    border-radius:999px;
     background:transparent;
     color:var(--text-secondary);
     font-size:18px;
@@ -163,6 +167,11 @@
     align-items:center;
     cursor:pointer;
     transition:.25s ease;
+}
+
+.theme-btn svg{
+    width: 16px;
+    height: 16px;
 }
 
 .theme-btn:hover{
