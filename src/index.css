@@ -13,13 +13,23 @@
     font-display: swap;
 }
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2{
     font-family: "Aeonik", Inter, sans-serif;
     font-weight: 500;
+}
+body,
+p,
+span,
+button,
+a,
+input,
+textarea,
+label,
+li,
+small,
+strong,
+em {
+    font-family: "Inter", sans-serif;
 }
 :root,
 :root[data-theme="dark"] {
