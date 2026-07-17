@@ -87,7 +87,7 @@
 }
 
 .handbook-card:hover .handbook-image {
-    transform: rotate(0deg) scale(1.06);
+    transform: rotate(4deg) scale(1.06);
 }
 
 /* Floating JSON */
@@ -130,9 +130,7 @@
     z-index: 5;
     align-items: flex-start;
     padding-top: 18px;
-
     margin-left: 390px;
-
     max-width: 560px;
 }
 
@@ -255,7 +253,7 @@
     font-size: 2.1rem;
     line-height: 1.5;
     margin-bottom: 18px;
-    font-weight: 500px;
+    font-weight: normal;
 }
 
 .resource-text p {
