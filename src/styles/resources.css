@@ -75,16 +75,13 @@
 
 .handbook-image {
     position: absolute;
-
     left: 25px;
     top: -38px;
-
     width: 240px;
-
     z-index: 5;
-
-    transform: rotate(-12deg);
+    transform: rotate(-12deg) scale(1);
     transition: transform 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    transform-origin: center center;
 }
 
 .handbook-image img {
@@ -93,7 +90,7 @@
 }
 
 .handbook-card:hover .handbook-image {
-    transform: rotate(10deg);
+    transform: rotate(-4deg) scale(1.06);
 }
 
 /* Floating JSON */
@@ -214,8 +211,8 @@
 
 .resource-item h2 {
     color: var(--text-primary);
-    font-size: 1.7rem;
-    font-weight:600px;
+    font-size: 2.2rem;
+    font-weight:500px;
     line-height:1.15;
     margin-bottom: 16px;
 }
@@ -225,7 +222,7 @@
     font-size:15px;
     line-height:1.6;
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
 
 /* ================= RIGHT CARD ================= */
@@ -243,7 +240,7 @@
 }
 
 .resource-text {
-    width: 46%;
+    width: 48%;
     padding: 40px 34px;
     display: flex;
     flex-direction: column;
@@ -252,9 +249,10 @@
 
 .resource-text h2 {
     color: var(--text-primary);
-    font-size: 2.7rem;
+    font-size: 2.2rem;
     line-height: 1.08;
     margin-bottom: 18px;
+    font-weight: 500px;
 }
 
 .resource-text p {
@@ -266,7 +264,7 @@
 
 .resource-image {
     position: relative;
-    width: 45%;
+    width: 52%;
     overflow: hidden;
     border-top-right-radius: 22px;
     border-bottom-right-radius: 22px;
