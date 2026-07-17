@@ -1,5 +1,5 @@
 .resources {
-    width: min(1240px, calc(100% - 64px));
+    width: min(1200px, calc(100% - 64px));
     margin: 80px auto;
     padding: 0;
     display: flex;
@@ -11,18 +11,13 @@
 
 .handbook-card {
     position: relative;
-
     display: flex;
     align-items: center;
-
     min-height: 230px;
-
     padding: 42px 72px;
-
     background: var(--bg-surface-alt);
     border: 1px solid var(--border-color-soft);
     border-radius: 22px;
-
     overflow: visible;
 }
 
@@ -30,20 +25,14 @@
 
 .handbook-card::before {
     content: "";
-
     position: absolute;
     inset: 0;
-
     background-image:
         linear-gradient(var(--grid-line) 1px, transparent 1px),
         linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-
     background-size: 28px 28px;
-
     opacity: .55;
-
     pointer-events: none;
-
     border-radius: inherit;
 }
 
@@ -51,20 +40,13 @@
 
 .handbook-image::before {
     content: "";
-
     position: absolute;
-
     width: 220px;
     height: 220px;
-
     background: var(--accent-purple-glow);
-
     border-radius: 50%;
-
     filter: blur(80px);
-
     opacity: .18;
-
     z-index: -1;
 }
 
@@ -94,32 +76,21 @@
 
 .json-card {
     position: absolute;
-
     left: 180px;
     top: 42px;
-
     width: 250px;
-
     background: var(--bg-surface);
-
     border: 1px solid var(--border-color);
     border-radius: 18px;
-
     padding: 20px;
-
     z-index: 2;
-
 }
 
 .json-card pre {
     margin: 0;
-
     font-family: monospace;
-
     color: var(--text-primary);
-
     font-size: 14px;
-
     line-height: 1.8;
 }
 
@@ -160,7 +131,7 @@
     color:var(--text-primary);
     border:1px solid var(--border-color);
     border-radius:999px;
-    padding:8px 16px;
+    padding:7px 14px;
     font-size:14px;
     font-weight:400;
     cursor:pointer;
@@ -207,13 +178,13 @@
     background: var(--bg-input);
     border: 1px solid var(--border-color-soft);
     border-radius: 22px;
-    padding: 28px;
+    padding: 24px;
 }
 
 .resource-item h2 {
     color: var(--text-primary);
     font-size: 2.1rem;
-    font-weight:500px;
+    font-weight:500;
     line-height:1.5;
     margin-bottom: 16px;
 }
@@ -237,12 +208,12 @@
     border-radius: 22px;
     padding: 0;
     overflow: hidden;
-    min-height: 330px;
+    min-height: 310px;
 }
 
 .resource-text {
     width: 48%;
-    padding: 40px 30px;
+    padding: 34px 26px;
     display: flex;
     flex-direction: column;
     justify-content: center;

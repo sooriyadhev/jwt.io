@@ -1,21 +1,13 @@
 .agent-skills {
-
-    max-width: 1240px;
-
+    max-width: 1200px;
     margin: 80px auto 60px;
-
     padding: 40px 40px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background: var(--bg-surface);
-
     border: 1px solid var(--border-color-soft);
-
     border-radius: 22px;
-
     gap: 60px;
 }
 
@@ -54,7 +46,7 @@
     color:var(--text-primary);
     border:1px solid var(--border-color);
     border-radius:999px;
-    padding:8px 16px;
+    padding:7px 14px;
     font-size:14px;
     font-weight:400;
     cursor:pointer;
@@ -86,7 +78,6 @@
 }
 
 .terminal-header {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +100,6 @@
 
 .terminal-body pre {
     color: var(--text-primary);
-    background: var(--bg-input);
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
